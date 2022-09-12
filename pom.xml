@@ -23,9 +23,9 @@
 
   <distributionManagement>
             <repository>
-                    <id>Maven-Hosted</id>
+                    <id>nexus</id>
                     <name>Maven-Hosted</name>
-                    <url>http://54.91.22.110:8081/repository/Maven-Hosted/</url>
+                    <url>http://34.236.152.13:8081/repository/Maven-Hosted/</url>
            </repository>
     <site>
       <id>site-server</id>
