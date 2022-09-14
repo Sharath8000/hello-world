@@ -12,7 +12,7 @@ pipeline {
     stage('SonarQube analysis') {
       steps {
         withSonarQubeEnv('sonarqube') {
-          sh 'mvn sonar:sonar -Dsonar.branch.name = feature'
+          sh 'mvn sonar:sonar -Dsonar.branch.name'
         }
 
       }
