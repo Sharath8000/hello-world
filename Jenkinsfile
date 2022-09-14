@@ -9,11 +9,6 @@ pipeline{
                 git 'https://github.com/Sharath8000/hello-world.git'
             }
          }        
-        stage('Docker image build'){
-              steps {
-                    sh 'mvn clean deploy'
-              }
-         }
         stage('SonarQube analysis') {
         //    def scannerHome = tool 'SonarScanner 4.0';
         steps{
@@ -24,5 +19,10 @@ pipeline{
                 }
             }
         }
+         stage('Docker image build'){
+              steps {
+                    sh 'mvn clean deploy'
+              }
+         }
     }
 }
